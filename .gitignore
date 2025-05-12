@@ -1,3 +1,5 @@
 
 *.pkl
-/pretrained_models
+pretrained_models/
+data/
+__pycache__

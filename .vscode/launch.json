@@ -1,0 +1,58 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "DriveDreamer2 Image Condition",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/dreamer-train/projects/launch.py",
+            "args": [
+                "--project_name", "DriveDreamer2",
+                "--config_name", "drivedreamer2_img_cond",
+                "--runners", "drivedreamer2.DriveDreamer2_Tester"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "DriveDreamer2 Video Condition",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/dreamer-train/projects/launch.py",
+            "args": [
+                "--project_name", "DriveDreamer2",
+                "--config_name", "drivedreamer2_video_cond",
+                "--runners", "drivedreamer2.DriveDreamer2_Tester"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "DriveDreamer2 Without Image",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/dreamer-train/projects/launch.py",
+            "args": [
+                "--project_name", "DriveDreamer2",
+                "--config_name", "drivedreamer2_wo_img",
+                "--runners", "drivedreamer2.DriveDreamer2_Tester"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "port": 56105
+        },
+        {
+            "name": "NuScenes Converter mini",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/dreamer-datasets/dd_scripts/converters/nuscenes_converter.py",
+            "args": [
+                "--nusc_version", "mini",
+                "--data_root", "data/nuscenes",
+                "--save_root", "data/nuscenes"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false
+        }
+    ]
+} 
